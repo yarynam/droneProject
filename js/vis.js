@@ -118,8 +118,8 @@ $("#vis").height(docHeight);
       })
       .attr("x", this.width * Math.random())
       .attr("y", this.height * Math.random())
-      .attr("width", 17)
-      .attr("height", 17)
+      .attr("width", 20)
+      .attr("height", 20)
       .attr("id", function(d) {
         return "Bee_" + d.id;
       }).on("mouseover", function(d, i) {
