@@ -165,14 +165,17 @@ p {
  font: 14px/25px "Open Sans";
 }
 
+.center {
+  text-align: center;
+}
 
 .svg-container {
 display: block;
 position: relative;
-width: 95%;
+width: 110%;
 margin:auto;
 padding-top:3em;
-padding-bottom: 100%;
+padding-bottom: 10%;
 vertical-align: middle;
 overflow: hidden;
 }
@@ -212,53 +215,38 @@ left: 0;
   padding-right: 2em;
 }
 
-#honeycomb {
-  margin-top: 10em;
+
+.m1 {
+  animation: mosquito1 5s ease infinite;
 }
 
-#comb2 {
-
-  animation: transp 11s ease infinite;
+.m2 {
+  animation: mosquito2  4s ease infinite;
 }
 
-#comb4 {
-  animation: transp 7s ease infinite;
-}
-
-#comb9 {
-  animation: transp 15s ease infinite;
-}
-
-#comb5 {
-  animation: transp 5s ease infinite;
-}
-
-#comb8 {
-  animation: transp 17s ease infinite;
-}
-
-#comb6 {
-  animation: transp 8s ease infinite;
-}
-
-#comb7 {
-  animation: transp 13s ease infinite;
-}
-
-#comb10 {
-  animation: transp 10s ease infinite;
+.m3 {
+  animation: mosquito3 7s ease infinite;
 }
 
 
-@keyframes transp  {
-0% { fill-opacity: 1;}
-40% {fill-opacity: 1;}
-50% {fill-opacity: 0;}
-60% {fill-opacity: 0;}
-100% {fill-opacity: 1;}
+
+@keyframes mosquito1  {
+0% {stroke: #A36D5C; transform: translateY(0px);}
+50% {stroke: #D9CEAD; transform: translateY(10px);}
+100% {stroke: #A36D5C; transform: translateY(0px);}
 }
 
+@keyframes mosquito2  {
+0% {stroke: #383E47; transform: translateY(0px);}
+50% {stroke: #A36D5C; transform: translateY(-10px);}
+100% {stroke: #383E47; transform: translateY(0px);}
+}
 
+@keyframes mosquito3  {
+0% {stroke: #D9CEAD; transform: translateY(0px);}
+50% {stroke: #383E47; transform: translateY(10px);}
+100% {stroke: #D9CEAD; transform: translateY(0px);}
+}
 
 
 

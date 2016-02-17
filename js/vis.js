@@ -47,7 +47,7 @@ $("#vis").height(docHeight);
           y: this.height * 100
         },
         "low": {
-          x: this.width / 4.5,
+          x: this.width / 4,
           y: this.height / 2.1
         },
         "medium": {
@@ -59,7 +59,7 @@ $("#vis").height(docHeight);
           y: this.height / 2.1
         }
       };
-      this.layout_gravity = -0.01;
+      this.layout_gravity = -0.025;
       this.damper = 0.07;
       this.vis = null;
       this.nodes = [];
@@ -112,14 +112,14 @@ $("#vis").height(docHeight);
       .append("image")
       .attr('class', 'beenode')
       .attr("xlink:href", function(d) {
-        if (d.group == "суди")  {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/bee1.svg"}
-        else if  (d.group == "МВС") {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/bee2.svg"}
-        else {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/bee3.svg"}
+        if (d.group == "суди")  {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito.svg"}
+        else if  (d.group == "МВС") {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito2.svg"}
+        else {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito3.svg"}
       })
       .attr("x", this.width * Math.random())
       .attr("y", this.height * Math.random())
-      .attr("width", 16)
-      .attr("height", 16)
+      .attr("width", 17)
+      .attr("height", 17)
       .attr("id", function(d) {
         return "Bee_" + d.id;
       }).on("mouseover", function(d, i) {
@@ -196,8 +196,8 @@ $("#vis").height(docHeight);
         "Мільйонні автопарки": this.width / 6*5
       };
       cars_y = {
-        "загальна вартість: 100 - 499 тис грн": this.width / 6,
-        "загальна вартість: 500 тис - 1 млн грн": this.width / 2,
+        "загальна вартість: 500 - 699 тис грн": this.width / 6,
+        "загальна вартість: 700 тис - 999 тис грн": this.width / 2,
         "загальна вартість: більше 1 млн грн": this.width / 6*5
       };
       cars_data = d3.keys(cars_x);
@@ -257,8 +257,8 @@ $("#vis").height(docHeight);
         "Палаци":this.width / 6*5
       };
       flats_y = {
-        "загальний метраж нерухомості: 300 - 499 м²": this.width / 6,
-        "загальний метраж нерухомості: 500 - 999 м²": this.width / 2,
+        "загальний метраж нерухомості: 500 - 699 м²": this.width / 6,
+        "загальний метраж нерухомості: 700 - 999 м²": this.width / 2,
         "загальний метраж нерухомості: 1000 і більше м²": this.width /6*5
       };
       flats_data = d3.keys(flats_x);
@@ -391,7 +391,7 @@ $("#vis").height(docHeight);
         return chart.display_group_all();
       };
     })(this);
-    return d3.csv("data/data.csv", render_vis);
+    return d3.csv("data/data1.csv", render_vis);
   });
 
 }).call(this);
