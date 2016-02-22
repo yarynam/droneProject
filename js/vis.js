@@ -6,7 +6,7 @@ var wp1 = new Waypoint({
 var chartwidth = $("#vis").width();
 var docHeight = $( window ).height();
 var docWidth = $( window ).width();
-$("#vis").height(docHeight);
+
 
 
 
@@ -41,7 +41,7 @@ if (docWidth > 500 ) {
          var max_amount;
          this.data = data;
          this.width = chartwidth;
-         this.height = 600;
+         this.height = 700;
          this.tooltip = CustomTooltip("gates_tooltip", 240);
          this.center = {
            x: this.width / 2,
