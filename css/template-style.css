@@ -140,9 +140,9 @@ p {
 
 h1 {
   text-transform: none;
-  font: 38px/45px "Open Sans";
+  font: 42px/55px "Open Sans";
   font-weight: bold;
-  margin: 50px 0px 0px;
+  margin: 10px 0px 0px;
 }
 
 h2 {
@@ -169,10 +169,14 @@ p {
   text-align: center;
 }
 
+.main-text {
+  margin-left: 15%;
+  margin-right:15%;
+}
 .svg-container {
 display: block;
 position: relative;
-width: 110%;
+width: 100%;
 margin:auto;
 padding-top:3em;
 padding-bottom: 10%;
@@ -268,6 +272,9 @@ left: 0;
 #hint {
   margin-top: 1em;
 }
+#hint2 {
+  display: none;
+}
 
 .cars,
 .flats,
@@ -300,7 +307,26 @@ left: 0;
   font-weight:bold;
 }
 
+#help_section {
+  margin-top: 10em;
+}
 
+
+/* ======== D3.js ======== */
+
+.help_rect {
+  fill:#C77966;
+}
+.help {
+  fill:#fff;
+}
+.car_rect {
+  fill:#D9CEAD;
+}
+
+.name {
+  cursor:pointer;
+}
 
 /* ======== Media Query ======== */
 
@@ -328,7 +354,13 @@ left: 0;
 .dj_header {display: none;}
 .links li {display:none;}
 .logo {margin-top: 15px;}
+#footer-wraper { padding-top: 0px;}
+h1 {font: 24px/28px "Open Sans"; font-weight: bold; margin-top: -0.5em;}
+h3 {font: 16px/22px "Open Sans"; }
+.btn {  padding: 0.2em 0.2em; margin-top: 1em;}
 .p2 {display: none;}
 #honeycomb {margin-top: 2em;}
-h1 {margin-top: -1.5em;}
+.main-text { margin-left: 1%; margin-right:1%;}
+#help_section {  margin-top: 0em; }
+#hint2 {display: block;}
 }
