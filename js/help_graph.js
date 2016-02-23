@@ -1,7 +1,9 @@
+var helpGraphHeight = $("#help-text").height() - 100;
+console.log(helpGraphHeight);
 
 var m = [30, 10, 10, 30],
-    w = parseInt(d3.select('#help_graph').style('width')) - m[1],
-    h = 350 - m[0] - m[2];
+    w = parseInt(d3.select('#help-graph').style('width')) - m[1],
+    h = helpGraphHeight;
 
 var format = d3.format(",.0f");
 
@@ -31,7 +33,7 @@ d3.csv("data/help_data.csv", function(error, data) {
   var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-h),
       yAxis = d3.svg.axis().scale(y).orient("left").tickSize(0);
 
-  var svg = d3.select("#help_graph").append("svg")
+  var svg = d3.select("#help-graph").append("svg")
       .attr("width", w + m[1] + m[3])
       .attr("height", h + m[0] + m[2])
       .append("g")
@@ -76,14 +78,14 @@ d3.csv("data/help_data.csv", function(error, data) {
           if (d.name === thisdata.name) {return "#954A37" }
         })
         d3.selectAll(".car_rect").style("fill", function(d){
-          if (d.name == thisdata.name) {return "#BFAC73"}
+          if (d.name == thisdata.name) {return "#383E47"}
         })
 
        })
       .on("mouseout", function() {
         d3.select(this).style("font-weight", "normal")
         d3.selectAll(".help_rect").style("fill","#C77966")
-        d3.selectAll(".car_rect").style("fill", "#D9CEAD")
+        d3.selectAll(".car_rect").style("fill", "#515A67")
       })
       .on('click', function(d, i) {
         window.location.href = "http://declarations.com.ua/declaration/" + d.id;
@@ -127,8 +129,10 @@ d3.csv("data/help_data.csv", function(error, data) {
 
       d3.select(window).on('resize', resize);
       function resize() {
-       w = parseInt(d3.select('#help_graph').style('width')) - m[1],
-       chartWidth = w / 2 - 55;;
+       helpGraphHeight = $("#help-text").height() - 100;
+       w = parseInt(d3.select('#help-graph').style('width')) - m[1],
+       h = helpGraphHeight;
+       chartWidth = w / 2 - 55;
 
        // Set the scale domain.
        x.range([0, chartWidth]);

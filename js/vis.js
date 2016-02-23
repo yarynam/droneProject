@@ -41,7 +41,7 @@ if (docWidth > 500 ) {
          var max_amount;
          this.data = data;
          this.width = chartwidth;
-         this.height = 700;
+         this.height = 600;
          this.tooltip = CustomTooltip("gates_tooltip", 240);
          this.center = {
            x: this.width / 2,
