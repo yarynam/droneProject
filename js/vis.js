@@ -386,12 +386,18 @@ if (docWidth > 500 ) {
          return root.display_all();
        };
        $("#flat").click(function(){
+         $(".btn").removeClass("active-btn");
+         $(this).addClass("active-btn");
          return chart.display_by_flat();
        });
        $("#car").click(function(){
+         $(".btn").removeClass("active-btn");
+         $(this).addClass("active-btn");
          return chart.display_by_car();
        })
        $("#year").click(function(){
+         $(".btn").removeClass("active-btn");
+         $(this).addClass("active-btn");
          return chart.display_by_year();
        })
        root.display_all = (function(_this) {
