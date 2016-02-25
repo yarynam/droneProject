@@ -157,6 +157,7 @@ h2 {
 h3 {
   text-transform: none;
   font: 18px/35px "Open Sans";
+  font-weight: bold;
   margin: 10px 0px 20px;
 }
 
@@ -187,6 +188,12 @@ padding-top:3em;
 padding-bottom: 10%;
 vertical-align: middle;
 overflow: hidden;
+}
+
+.dotted {
+  color: #4b444d;
+  border-bottom: 1.5px dotted #ccc;
+  text-decoration: none;
 }
 
 .svg-content {
@@ -367,7 +374,7 @@ left: 0;
 .logo {margin-top: 15px;}
 #footer-wraper { padding-top: 0px;}
 h1 {font: 24px/28px "Open Sans"; font-weight: bold; margin-top: -0.5em;}
-h3 {font: 16px/22px "Open Sans"; }
+h3 {font: 16px/22px "Open Sans"; font-weight: bold; }
 .btn {  padding: 0.2em 0.2em; margin-top: 1em;}
 .p2 {display: none;}
 #honeycomb {margin-top: 2em;}

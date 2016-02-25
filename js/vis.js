@@ -96,6 +96,7 @@ if (docWidth > 500 ) {
                car_price: d.all_cars_sum_uah_mln,
                flat:d.group_flat,
                year:d.group_years,
+               car_years: d.car_years,
                estate: d.all_estate,
                x: Math.random() * 900,
                y: Math.random() * 800
@@ -356,7 +357,8 @@ if (docWidth > 500 ) {
          content += "<span class=\"name\">Посада:</span><span class=\"value\"> " + data.position + "</span><br/>";
          content += "<span class=\"name\">Зарплатня:</span><span class=\"value\"> " + data.salary + " грн" +"</span><br/>";
          content += "<span class=\"name\">Вартійсть машин сім'ї:</span><span class=\"value\"> " + data.car_price + " млн грн" +"</span><br/>";
-         content += "<span class=\"name\">Метраж нерухомості:</span><span class=\"value\"> " + data.estate + " м²" + "</span>";
+         content += "<span class=\"name\">Метраж нерухомості:</span><span class=\"value\"> " + data.estate + " м²" + "</span><br/>";
+         content += "<span class=\"name\">Для купівлі машин потрібно було економити </span><span class=\"value\"> " + data.car_years + " років" + "</span>";
          return this.tooltip.showTooltip(content, d3.event);
        };
 
@@ -397,7 +399,7 @@ if (docWidth > 500 ) {
            return chart.display_group_all();
          };
        })(this);
-       return d3.csv("data/data1.csv", render_vis);
+       return d3.csv("data/data_update.csv", render_vis);
      });
 
    }).call(this);
