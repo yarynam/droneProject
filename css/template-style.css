@@ -228,6 +228,9 @@ left: 0;
   padding-right: 2em;
 }
 
+#help-graph-title {
+  margin-top: 0px;
+}
 
 .m1 {
   animation: mosquito1 5s ease infinite;

@@ -443,14 +443,14 @@ if (docWidth > 500 ) {
         this.centers = {
           "low": {
             x: this.width / 10,
-            y: this.height * 100
+            y: this.height * 5
           },
           "medium": {
             x: 2 * this.width / 3.5,
             y: this.height / 2.1
           },
           "high": {
-            x: 2 * this.width / 5,
+            x: 2 * this.width / 6,
             y: this.height / 2.1
           }
         };
@@ -703,12 +703,12 @@ if (docWidth > 500 ) {
         this.vis.selectAll(".cars, .flats, .subtitle").remove();
         var years, years_data, years_x;
         years_x = {
-          "Cупереконом": this.width / 5,
-          "Не їдять роками": this.width / 1.5
+          "Cупереконом": this.width / 4.5,
+          "Не їдять роками": this.width / 1.4
         };
         years_y = {
-          "ціна машин = з/п за 5 - 7 р.": this.width / 5,
-          "ціна машин > з/п за 7 р.": this.width / 1.5
+          "ціна машин = з/п за 5 - 7 р.": this.width / 4.3,
+          "ціна машин > з/п за 7 р.": this.width / 1.4
         };
         years_data = d3.keys(years_x);
         years_data2 = d3.keys(years_y);
