@@ -50,7 +50,7 @@ if (docWidth > 500 ) {
          this.centers = {
            "superlow": {
              x: this.width / 2,
-             y: this.height * 5
+             y: this.height * 3
            },
            "low": {
              x: this.width / 3.5,
