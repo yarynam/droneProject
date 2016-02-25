@@ -358,7 +358,7 @@ if (docWidth > 500 ) {
          content += "<span class=\"name\">Зарплатня:</span><span class=\"value\"> " + data.salary + " грн" +"</span><br/>";
          content += "<span class=\"name\">Вартійсть машин сім'ї:</span><span class=\"value\"> " + data.car_price + " млн грн" +"</span><br/>";
          content += "<span class=\"name\">Метраж нерухомості:</span><span class=\"value\"> " + data.estate + " м²" + "</span><br/>";
-         content += "<span class=\"name\">Для купівлі машин потрібно було економити </span><span class=\"value\"> " + data.car_years + " років" + "</span>";
+         content += "<span>Для купівлі машин потрібно було економити </span><span class=\"value\"> " + data.car_years + " р." + "</span>";
          return this.tooltip.showTooltip(content, d3.event);
        };
 
@@ -740,6 +740,7 @@ if (docWidth > 500 ) {
         content += "<span class=\"name\">Зарплатня:</span><span class=\"value\"> " + data.salary + " грн" +"</span><br/>";
         content += "<span class=\"name\">Вартійсть машин сім'ї:</span><span class=\"value\"> " + data.car_price + " млн грн" +"</span><br/>";
         content += "<span class=\"name\">Метраж нерухомості:</span><span class=\"value\"> " + data.estate + " м²" + "</span>";
+        content += "<span>Для купівлі машин потрібно було економити </span><span class=\"value\"> " + data.car_years + " р." + "</span>";
         return this.tooltip.showTooltip(content, d3.event);
       };
 
