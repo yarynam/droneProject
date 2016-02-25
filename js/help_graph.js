@@ -2,8 +2,10 @@ var helpGraphHeight = $("#help-text").height() - 100;
 console.log(helpGraphHeight);
 
 var m = [30, 10, 10, 30],
-    w = parseInt(d3.select('#help-graph').style('width')) - m[1],
-    h = helpGraphHeight;
+    w = parseInt(d3.select('#help-graph').style('width')) - m[1]
+    if (helpGraphHeight < 289) {
+      var h = helpGraphHeight + 100; }
+      else { var h = helpGraphHeight }
 
 var format = d3.format(",.0f");
 
@@ -131,7 +133,7 @@ d3.csv("data/help_data.csv", function(error, data) {
       function resize() {
        helpGraphHeight = $("#help-text").height() - 100;
        w = parseInt(d3.select('#help-graph').style('width')) - m[1],
-       h = helpGraphHeight;
+       h = helpGraphHeight + 100;
        chartWidth = w / 2 - 55;
 
        // Set the scale domain.
