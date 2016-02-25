@@ -224,6 +224,15 @@ left: 0;
   display: block;
   }
 
+.active-btn {
+    border: 3px solid #C77966;
+    color: #C77966;
+}
+
+.active-btn:hover {
+    color: #C77966;
+}
+
 .inline {
   padding-right: 2em;
 }
