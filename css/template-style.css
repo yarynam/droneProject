@@ -256,14 +256,14 @@ left: 0;
 
 
 @keyframes mosquito1  {
-0% {stroke: #A36D5C; transform: translateY(0px);}
+0% {stroke: #FB6A4A; transform: translateY(0px);}
 50% {stroke: #D9CEAD; transform: translateY(10px);}
-100% {stroke: #A36D5C; transform: translateY(0px);}
+100% {stroke: #FB6A4A; transform: translateY(0px);}
 }
 
 @keyframes mosquito2  {
 0% {stroke: #383E47; transform: translateY(0px);}
-50% {stroke: #A36D5C; transform: translateY(-10px);}
+50% {stroke: #FB6A4A; transform: translateY(-10px);}
 100% {stroke: #383E47; transform: translateY(0px);}
 }
 
@@ -344,7 +344,7 @@ left: 0;
 /* ======== D3.js ======== */
 
 .help_rect {
-  fill:#C77966;
+  fill:#FB6A4A;
 }
 .help,
 .price {

@@ -121,7 +121,7 @@ if (docWidth > 500 ) {
          .attr("xlink:href", function(d) {
            if (d.group == "суди")  {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito.svg"}
            else if  (d.group == "МВС") {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito2.svg"}
-           else {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito3.svg"}
+           else {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito4.svg"}
          })
          .attr("x", this.width * Math.random())
          .attr("y", this.height * Math.random())
@@ -515,7 +515,7 @@ if (docWidth > 500 ) {
         .attr("xlink:href", function(d) {
           if (d.group == "суди")  {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito.svg"}
           else if  (d.group == "МВС") {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito2.svg"}
-          else {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito3.svg"}
+          else {return "https://dl.dropboxusercontent.com/u/82823005/beeproject/mosquito4.svg"}
         })
         .attr("x", this.width * Math.random())
         .attr("y", this.height * Math.random())

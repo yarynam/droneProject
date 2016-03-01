@@ -77,7 +77,7 @@ d3.csv("data/help_data.csv", function(error, data) {
         d3.select(this).style("font-weight", "bold")
         var thisdata = d3.select(this).datum();
         d3.selectAll(".help_rect").style("fill", function(d) {
-          if (d.name === thisdata.name) {return "#954A37" }
+          if (d.name === thisdata.name) {return "#D85944" }
         })
         d3.selectAll(".car_rect").style("fill", function(d){
           if (d.name == thisdata.name) {return "#383E47"}
@@ -86,7 +86,7 @@ d3.csv("data/help_data.csv", function(error, data) {
        })
       .on("mouseout", function() {
         d3.select(this).style("font-weight", "normal")
-        d3.selectAll(".help_rect").style("fill","#C77966")
+        d3.selectAll(".help_rect").style("fill","#FB6A4A")
         d3.selectAll(".car_rect").style("fill", "#515A67")
       })
       .on('click', function(d, i) {
