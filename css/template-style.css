@@ -225,12 +225,12 @@ left: 0;
   }
 
 .active-btn {
-    border: 3px solid #C77966;
-    color: #C77966;
+    border: 3px solid #FB6A4A;
+    color: #FB6A4A;
 }
 
 .active-btn:hover {
-    color: #C77966;
+    color: #FB6A4A;
 }
 
 .inline {
